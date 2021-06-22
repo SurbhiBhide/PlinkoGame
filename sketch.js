@@ -81,6 +81,9 @@ function draw() {
     //particlegrp.add(particles);
   }
  
+  if (frameCount % 5000 === 0){
+    particles = [];
+  }
 
   Engine.update(engine);
   ground.display();
